@@ -1,0 +1,31 @@
+html {height: 100%;}
+
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(200,  55%, 60%);
+}
+
+section {
+  width: 400px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 17px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.35);
+}
+
+section input[type="number"] {
+  width: 98%;
+  margin: 4% 0%;
+}
+
+section input[type="submit"] {
+  width: 100%;
+  margin: auto;
+}
+
+section #output {
+  min-height: 60px;
+}

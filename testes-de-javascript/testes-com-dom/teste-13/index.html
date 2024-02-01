@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="index.js" defer></script>
+    <style media="screen">
+      * {
+        box-sizing: border-box;
+        padding: 0%;
+        margin: 0%;
+      }
+
+      body {
+        height: 100vh;
+        display: flex;
+      }
+
+      div {
+        height: 100%;
+        width: 50%;
+        background-color: gray;
+        border: 1px solid rgba(0, 0, 0, 0.65);
+        user-select: none;
+      }
+
+      div:hover {
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+    </style>
+</head>
+<body>
+  <div class="button" onclick="buttonSelect(1)"></div>
+  <div class="button" onclick="buttonSelect(2)"></div>
+</body>
+</html>

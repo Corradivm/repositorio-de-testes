@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href=".css">
+  <title>Eventos no DOM</title>
+  <style>
+    body {display: flex; justify-content: space-around;}
+
+    div {
+      user-select: none;
+    }
+
+    div#area {
+      font: normal 20px Arial;
+      color: white;
+      background-color: rgb(42, 139, 42);
+      height: 200px;
+      width: 200px;
+      line-height: 200px;
+      text-align: center;
+    }
+
+    div#beta {
+      font: normal 20px Arial;
+      color: white;
+      background-color: rgb(42, 139, 42);
+      height: 200px;
+      width: 200px;
+      line-height: 200px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="area" onclick="clicar()" onmouseenter="hover()" onmouseout="endhover()">
+    Tá fora!
+  </div>
+
+  <div id="beta">
+    Tá fora!
+  </div>
+
+  <script>
+    let area_div = document.getElementById('area')
+
+    function clicar() {
+      area_div.innerHTML = 'Você clicou em mim?!'
+      area_div.style.background = 'red'
+    }
+
+    function hover() {
+      area_div.style.background = 'rgb(50, 179, 42)'
+      area_div.innerHTML = 'Tá dentro!'
+    }
+
+    function endhover() {
+      area_div.style.background = 'rgb(42, 139, 42)'
+      area_div.innerHTML = 'Tá fora!'
+    }
+
+    let beta_div = document.getElementById('beta')
+
+    beta_div.addEventListener('click', clicar1)
+    beta_div.addEventListener('mouseenter', hover1)
+    beta_div.addEventListener('mouseout', endhover1)
+
+    function clicar1() {
+      beta_div.innerHTML = 'Você clicou em mim?!'
+      beta_div.style.background = 'red'
+    }
+
+    function hover1() {
+      beta_div.style.background = 'rgb(50, 179, 42)'
+      beta_div.innerHTML = 'Tá dentro!'
+    }
+
+    function endhover1() {
+      beta_div.style.background = 'rgb(42, 139, 42)'
+      beta_div.innerHTML = 'Tá fora!'
+    }
+  </script>
+</body>
+</html>

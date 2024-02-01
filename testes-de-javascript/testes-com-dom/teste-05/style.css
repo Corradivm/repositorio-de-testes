@@ -1,0 +1,14 @@
+body {
+    text-align: center;
+}
+div {
+    padding-top: 30px;
+}
+img {
+    border: 9px solid darkkhaki;
+    box-shadow: 0 0 10px black;
+}
+button {
+    background-color: white;
+    box-shadow: 0 0 1px black;
+}

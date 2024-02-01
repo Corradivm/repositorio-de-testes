@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href=".css">
+  <title></title>
+</head>
+<body>
+  <h1>Manipulando o DOM</h1>
+
+  <p>Um parágrafo bem legal</p>
+
+  <p>Netus diam hendrerit laoreet inceptos pretium porttitor eu vel nisi, praesent curabitur viverra luctus sociosqu fringilla duis <strong>rutrum</strong> interdum in, etiam primis enim iaculis molestie aenean nec hac. scelerisque quisque fringilla bibendum fringilla molestie at duis, sollicitudin tincidunt suspendisse malesuada curabitur integer. aenean ut litora consequat ut massa faucibus viverra diam nisi, gravida nulla sit habitant viverra volutpat curabitur blandit quisque, blandit turpis duis luctus laoreet elementum taciti sem. ut suspendisse mi per litora odio euismod vulputate fringilla neque fermentum taciti placerat congue curabitur leo, maecenas tempus curabitur arcu fermentum aliquet nibh cursus mauris inceptos est hendrerit adipiscing mi.</p>
+
+  <p>Lobortis suscipit nam convallis integer et donec turpis, eu condimentum ac maecenas suscipit leo vel porttitor, hendrerit pretium ullamcorper platea phasellus curae. massa aliquam arcu varius orci donec adipiscing imperdiet neque ut aliquam diam, curae ante conubia etiam est vel erat torquent metus lobortis blandit, aptent maecenas felis libero nunc sem quisque faucibus libero bibendum. luctus et praesent neque quis augue mauris purus, ut torquent viverra phasellus conubia curae habitasse, tempus viverra rutrum elementum lacinia nunc.</p>
+
+  <div class="opa">
+    <div class="opa2">Opa</div>
+    <div class="opa2">Opa</div>
+    opa opa
+  </div> <br>
+
+  <script>
+    let s1 = document.getElementsByTagName('p')[2]
+    p1 = document.getElementsByTagName('p')[1]
+    d1 = document.querySelectorAll('.opa .opa2') [0]
+
+    document.write(p1.innerHTML)
+    s1.style.color = 'green'
+    d1.style.background = 'blue'
+
+    /*
+    ###Mark
+    document.getElementsByTagName()[]
+
+    ###Name
+    document.getElementsByName()[]
+
+    ###Identifier
+    document.getElementById()
+
+    ###Class
+    document.getElementsByClassName()
+
+    ###Query Selector
+    document.querySelector()
+    document.querySelectorAll()[]
+    */
+  </script>
+</body>
+</html>

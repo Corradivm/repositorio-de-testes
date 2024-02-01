@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+
+body {
+  height: 100vh;
+  background-color: black;
+}
+
+.container {
+  height: 87.5%;
+}
+
+.img-container {
+  margin: auto;
+  position: relative;
+  width: 100%;
+}
+
+.img-container > img {
+  width: 100%;
+  height: auto;
+  display: none;
+  animation: appear 0.55s;
+}
+
+.button-container {
+  position: absolute;
+  background-color: transparent;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+
+.button-container button {
+  color: white;
+  padding: 9px;
+  font-size: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.25s;
+  margin: 3px;
+}
+
+.button-container button:hover {
+  background-color: black;
+}
+
+.smallimg-container {
+  height: auto;
+  width: 100%;
+  margin: auto;
+  display: flex;
+}
+
+.smallimg-container img {
+  width: 25%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0.3;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+footer {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height: 12.5%;
+  color: white;
+}
+
+footer a {
+  font-family:monospace;
+  font-size: 16px;
+  color: rgba(240, 240, 240, 0.6);
+  transition: 0.4s ease-out;
+}
+
+footer a:hover {
+  color: white;
+}
+
+@keyframes appear {
+  from {opacity: 0.5;}
+  to {opacity: 1;}
+}

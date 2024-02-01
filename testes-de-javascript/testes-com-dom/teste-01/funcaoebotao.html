@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de função</title>
+    <script>
+        function Myfunction() {
+            document.getElementById('nemo').innerHTML = 'Oi meu chapa!'
+        }
+    </script>
+</head>
+<body>
+    <h1 id="nemo">Olá meu caro amigo!</h1>
+    <button onclick="Myfunction()">Me clique!</button>
+    
+    <h2 id="domo">Esta frase será mudada por um script num arquivo externo!</h2>
+    <button onclick="Externalfunction()">Testa aqui para você ver!</button>
+    <p>Esse numero que você viu aí em cima é uma conta feita lá no arquivo JavaScript que e é mostrado o resultado nesta "window alert".</p>
+    <button onclick="loveFunction()">Me clique para receber uma mensagem!</button>
+    <script src="Script/script1.js">
+    </script>
+
+</body>
+</html>

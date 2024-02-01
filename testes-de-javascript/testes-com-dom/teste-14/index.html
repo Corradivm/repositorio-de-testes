@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="master.css">
+  <script src="index.js" defer></script>
+  <title>Galeria</title>
+</head>
+<body onload="defaultSlide()">
+  <div class="container">
+    <div class="img-container">
+      <img class="main-img" src="images/foto1.jpg" alt="">
+      <img class="main-img" src="images/foto2.jpg" alt="">
+      <img class="main-img" src="images/foto3.jpg" alt="">
+      <img class="main-img" src="images/foto4.jpg" alt="">
+      <div class="button-container">
+        <button onclick="switchSlide(-1)">&#10094;</button>
+       <button onclick="switchSlide(1)">&#10095;</button>
+      </div>
+    </div>
+    <div class="smallimg-container">
+      <img class="small-img" src="images/foto1.jpg" alt="" onclick="selectedSlide(1)">
+      <img class="small-img" src="images/foto2.jpg" alt="" onclick="selectedSlide(2)">
+      <img class="small-img" src="images/foto3.jpg" alt="" onclick="selectedSlide(3)">
+      <img class="small-img" src="images/foto4.jpg" alt="" onclick="selectedSlide(4)">
+    </div>
+  </div>
+  <footer>
+    <p>Apenas um teste por <a href="https://github.com/Corradivm" title="Visite meu perfil no GitHub!">Corradi</a>!</p>
+  </footer>
+</body>
+</html>

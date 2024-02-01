@@ -1,0 +1,21 @@
+html {height: 100%;}
+ 
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsla(0, 95%, 60%, 0.8);
+}
+
+section {
+  border-radius: 15px;
+  box-shadow: 2px 1px 8px rgba(0, 0, 0, 0.35);
+  padding: 20px;
+  background-color: white;
+}
+
+select {
+  width: 100%;
+  margin: 2% 0%;
+}
