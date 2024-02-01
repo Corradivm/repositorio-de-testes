@@ -1,0 +1,24 @@
+* {
+    color: aliceblue;
+}
+
+body {
+    background-image: url(savana.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+div {
+    padding-left: 25px;
+    width: 500px;
+    text-align: justify;
+}
+
+div > p {
+    text-indent: 3em;
+}
+
+div > h1 {
+    text-align: center;
+}

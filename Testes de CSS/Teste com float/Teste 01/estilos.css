@@ -1,0 +1,37 @@
+body {margin: 0;}
+
+ul {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  list-style-type: none;
+  background-color: rgb(50, 50, 50);
+  top: 0;
+  position: sticky;
+  font-family: "Roboto", sans-serif;
+}
+
+li {float: left;}
+
+li a {
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 15px;
+} 
+
+a {
+  &:hover {background-color: rgb(70, 70, 70);}
+  
+  &:active {background-color: rgb(80, 80, 80);}
+}
+
+.main {
+  background-color: rgb(100, 150, 255);
+  
+  &:hover {background-color: rgb(120, 180, 255);}
+  
+  &:active {background-color: rgb(130, 190, 255);}
+}

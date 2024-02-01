@@ -1,0 +1,33 @@
+* {font-family: sans-serif;}
+
+.dropdown button {
+  background-color: rgb(80, 200, 80);
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+}
+
+.dropdown-contend {
+  display: none;
+  position: absolute;
+  min-width: 150px;
+  box-shadow: 0 1px 5px gray;
+}
+
+.dropdown button:hover {
+  background-color: rgb(80, 180, 80);
+}
+
+.dropdown:hover .dropdown-contend {
+  display: block;
+}
+
+.dropdown a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+.dropdown a:hover {background-color: rgb(240, 240, 240);}

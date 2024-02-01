@@ -1,0 +1,44 @@
+body {background-color: rgb(110, 110, 110); height: 960px;}
+
+.space {
+  width: 100%;
+  height: 390px;
+  margin-top: 5%;
+}
+
+.img-box {
+  width: 85%;
+  height: 350px;
+  z-index: 0;
+  margin: auto;
+  background-color: white;
+  padding: 5% 5% 0% 5%;
+  transition: width 0.1s, height 0.1s, box-shadow 0.15s, transform 0.3s;
+}
+
+img {width:100%;}
+
+@media only screen and (min-width: 700px) {
+
+}  
+
+@media only screen and (min-width: 950px) {
+  .space {
+    width: 32.999%;
+    float: left;
+  }
+  
+  .img-box:hover {
+    width: 94%;
+    height: 375px;
+    position: relative;
+    box-shadow: 0px 13px 15px 7px rgba(0, 0, 0, 0.5);
+    transform: translate(0%, -15%);
+   
+  }
+  
+  .fourgroup:hover {
+    transform: translate(0%, -15%);
+    left: 0;
+  }
+}
