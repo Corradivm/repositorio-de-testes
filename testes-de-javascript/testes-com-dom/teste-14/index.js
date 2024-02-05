@@ -1,4 +1,13 @@
 let slideIndex = 1;
+let timer;
+const runTimer = () => {
+  timer = window.setInterval(
+    () => {
+      slideIndex += 1;
+      return newSlide(slideIndex);
+    }, 5000);
+}
+runTimer();
 
 function defaultSlide() {
   document.getElementsByClassName('main-img')[0].style.display = 'block';
@@ -21,12 +30,10 @@ function newSlide(n) {
   const slidesLength = document.getElementsByClassName('main-img').length;
   const slides = document.getElementsByClassName('main-img');
   const smallSlides = document.getElementsByClassName('small-img');
-  const smallslidesLength = document.getElementsByClassName('small-img').length;
 
   if (slideIndex < 1) {
     slideIndex = slidesLength;
-  }
-  if (slideIndex > slidesLength) {
+  } else if (slideIndex > slidesLength) {
     slideIndex = 1;
   }
   for (c = 0; c < slidesLength; c++) {
@@ -38,4 +45,9 @@ function newSlide(n) {
   slides[slideIndex - 1].style.display = 'block';
   smallSlides[slideIndex - 1].style.opacity = '1';
   smallSlides[slideIndex - 1].style.cursor = 'default';
+}
+
+document.body.onclick = () => {
+    clearInterval(timer)
+    runTimer()
 }
