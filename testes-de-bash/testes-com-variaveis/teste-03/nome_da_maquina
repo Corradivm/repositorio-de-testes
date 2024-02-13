@@ -1,0 +1,9 @@
+#/usr/bin/env bash
+
+# Pode-se atribuir comando a variáveis assim:
+maquina=$(hostname)
+
+# Ou assim:
+tempo=`uptime -p`
+
+echo $maquina $tempo

@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+fauna="Leão"
+echo "O valor da varíável é $fauna"
+
+fauna="Onça"
+echo "Agora é $fauna"
+readonly fauna
+
+# Retorna um erro:
+fauna="cabra"
+

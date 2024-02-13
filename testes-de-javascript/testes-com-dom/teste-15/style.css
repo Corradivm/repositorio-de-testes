@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+html, body {
+  min-height: 100svh;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsla(210, 100%, 10%, 0.8);
+}
+
+div.clock {
+  width: 20rem;
+  height: 20rem;
+  position: relative;
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 50%;
+  outline: 9px solid black;
+  outline-offset: 5px;
+}
+
+.clock > div {
+  width: 45%;
+  height: 3px;
+  position: absolute;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.03s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  top: 50%;
+  right: 50%;
+}
+
+.box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  font-family: sans-serif;
+  background-color: hsl(0, 40%, 80%);
+  padding: 10px;
+  line-height: 1.3em;
+  border-bottom-right-radius: 8px;
+}
+
+.seco-color {
+  display: inline-block;
+  background-color: hsl(0, 70%, 50%);
+}
+
+.minu-color {
+  display: inline-block;
+  background-color: hsl(150, 75%, 40%);
+}
+
+.hour-color {
+  display: inline-block;
+  background-color: hsl(0, 0%, 0%);
+}
+
+span {
+  border: 1px solid black;
+  width: 0.8rem;
+  height: 0.8rem;
+  vertical-align: middle;
+}
+
+#seco { background-color: hsl(0, 70%, 50%); }
+#minu { background-color: hsl(150, 75%, 40%); }
+#hour { background-color: hsl(0, 0%, 0%); }
