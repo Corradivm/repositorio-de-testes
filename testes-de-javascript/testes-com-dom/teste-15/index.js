@@ -26,4 +26,5 @@ function pointers() {
   }, 100)
 }
 
+setTimeout(pointers, 15)
 setInterval(pointers, 1000)
